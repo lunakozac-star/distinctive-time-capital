@@ -145,16 +145,11 @@
         var v = data.get(key);
         if (v && String(v).trim()) lines.push(labels[key] + ": " + v);
       });
-      var photos = form.querySelector('input[type="file"]');
-      if (photos && photos.files && photos.files.length) {
-        lines.push("Photos: " + photos.files.length + " file(s) selected (attach manually in email)");
-      }
-
       var subject = "Private Watch Review — " + (data.get("brand") || "Submission");
       var body =
         "New private review request via distinctivetime.capital\n\n" +
         lines.join("\n") +
-        "\n\n(Photos cannot be auto-attached from the website — please attach them to this email.)";
+        "\n\nPhotos can be sent by email or text as a follow-up if requested.";
 
       // Show success state in-page
       form.querySelectorAll(".intake__grid, .form__errors, .form__consent, #intake-submit, #form-devnote")

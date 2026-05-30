@@ -449,7 +449,6 @@ h3 { font-size: 1.18rem; letter-spacing: 0; }
   border-color: #c0392b; box-shadow: 0 0 0 3px rgba(192,57,43,0.12);
 }
 .field__hint { font-size: 0.78rem; color: var(--muted-light); text-transform: none; letter-spacing: 0; }
-.field input[type="file"] { padding: 9px; background: var(--paper); cursor: pointer; }
 
 .choice { border: 1px solid var(--line-light); border-radius: var(--radius); padding: 16px 18px; gap: 10px; }
 .choice legend { float: none; margin-bottom: 6px; }
